@@ -3,19 +3,22 @@ var items = Array.from(document.querySelectorAll('.item'));
 
 items.forEach(function (btn) {
     btn.addEventListener('click', function () {
-        switch (true) {
-            case input.innerHTML === '0':
-                input.innerHTML = '';
+        switch (btn.innerHTML) {
+            case '0':
+                if (input.innerHTML === '0') {
+                    input.innerHTML = '';
+                }
+                input.innerHTML += '0';
                 break;
-            case btn.innerHTML === 'AC':
+            case 'AC':
                 input.innerHTML = '0';
                 break;
-            case btn.innerHTML === 'DEL':
+            case 'DEL':
                 var arrtext = Array.from(input.innerHTML);
                 arrtext.splice(arrtext.length - 1, 1);
                 input.innerHTML = arrtext.length !== 0 ? arrtext.join('') : '0';
                 break;
-            case btn.innerHTML === '=':
+            case '=':
                 input.innerHTML = eval(input.innerHTML);
                 break;
             default:
