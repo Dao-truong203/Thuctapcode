@@ -8,7 +8,7 @@
     font-size: 2em;
     padding: 5px;
     font-weight: bold;
-    background-color: rgb(214, 74, 107);
+    background-color: rgb(236, 167, 167);
 }
 .container{
     margin: 10px auto;
@@ -36,16 +36,16 @@
 }
 .item1{
     grid-column: 1/span 2;
-    background-color: brown;
+    background-color: rgba(152, 97, 165, 0.739);
 }
 .item1:hover{
-    background-color: burlywood;
+    background-color: rgb(0, 255, 153);
 }
 .item2{
-    background-color: brown;
+    background-color: rgba(152, 97, 165, 0.739);
 }
 .item2:hover{
-    background-color: blue;
+    background-color: rgb(0, 255, 153);
 }
 .screen.input{
     position: absolute;
